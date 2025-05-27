@@ -66,8 +66,6 @@ git clone https://github.com/CMCDD/T_SELEX.git
 Step 5: Install Required Packages via Script
 Run the provided Python script to automatically install all dependencies
 
-```
-
 --bash
 python install_dependencies.py
 
@@ -86,6 +84,7 @@ Copy the script to a system-wide binary directory so it can be run from anywhere
 sudo cp molhybrid_program.py /usr/local/bin/molhybrid_program
 
 ```
+
 Step 8: Verify Installation
 Run the command to confirm everything is working properly
 
