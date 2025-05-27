@@ -49,25 +49,22 @@ cd anaconda3/envs/molhybrid/lib/python3.9/site-packages/
 ```
 Step 4: Download the Repository from GitHub
 Use git to clone the T_SELEX software repository to your local computer
---bash
+```bash
 git clone https://github.com/CMCDD/molhybrid.git
 ```
 Step 5: Install Required Packages via Script
 Run the provided Python script to automatically install all dependencies
---bash
+```bash
 python install_dependencies.py
 ```
 Step 6: Make the Main Script Executable
 Grant execution permissions to the molhybrid_program.py script
-```
-Step 7: Move Script to System Path for Global Use
-Copy the script to a system-wide binary directory so it can be run from anywhere
---bash
+```bash
 sudo cp molhybrid_program.py /usr/local/bin/molhybrid_program
 ```
-Step 8: Verify Installation
+Step 7: Verify Installation
 Run the command to confirm everything is working properly
---bash
+```bash
 molhybrid_program
 ```
 
