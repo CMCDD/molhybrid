@@ -75,10 +75,9 @@ Step 6: Make the Main Script Executable
 Grant execution permissions to the molhybrid_program.py script
 
 ```
+
 Step 7: Move Script to System Path for Global Use
 Copy the script to a system-wide binary directory so it can be run from anywhere
-
-```
 
 --bash
 sudo cp molhybrid_program.py /usr/local/bin/molhybrid_program
