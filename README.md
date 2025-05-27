@@ -21,7 +21,7 @@ command molhybrid -h
 
  -h, --help:
 -duplicates {T,true,f,false} (T or true shows the duplicates available and f or false do not show the available duplicates)
-                    core molecule to be derivatized (default "core.pdb")
+                    
 --opt {optimize, no_optimize) ( allows for optimization or no optimazation of the structures)
                     perform MMFF optimization(default off)
 --NP, {Np} (The number of parallel threads)
