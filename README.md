@@ -46,6 +46,7 @@ Step 2: Launch environment
 
 ```bash
 conda activate molhybrid
+
 ```
 Step 3: Go to the site-packages folder
 Navigate to the directory where Python libraries are installed (typically under lib/python3.9/site-packages) within your Conda environment
