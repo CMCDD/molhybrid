@@ -27,7 +27,7 @@ In order to access the user manual, runn the following command
 --NP, {Np} (The number of parallel threads)
 --ouput_type {single,Multiple} (output file format)
 
-
+```
 ## Installation
 
 ### Internal Dependencies
