@@ -71,9 +71,12 @@ molhybrid_program
 ```
 ## Examples
 
-An example core molecule is the substituted furan This compound has 6 hydrogen atoms, 3 on the ring, 2 aliphatic and 1 on the OH. These hydrogens must be present in the 3d structure file.
+An example two pharmacophore core molecule is the 
 
 ![alt text](https://github.com/CMCDD/molhybrid/blob/master/graphics/core.png)
+
+
+### Example 1 
 
 
 
