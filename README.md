@@ -65,7 +65,6 @@ Copy the script to a system-wide binary directory so it can be run from anywhere
 --bash
 sudo cp molhybrid_program.py /usr/local/bin/molhybrid_program
 ```
-
 Step 8: Verify Installation
 Run the command to confirm everything is working properly
 --bash
