@@ -76,7 +76,9 @@ An example two pharmacophore core molecule is the
 ![alt text](https://github.com/CMCDD/molhybrid/blob/master/graphics/core.png)
 
 
-### Example 1 
+### Example 1
+
+You have to provide 2 or more pharmacophore structures, the linkers such as functional group to the software and it will generate a library
 
 
 
