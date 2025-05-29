@@ -9,7 +9,7 @@ Molecular hybridization is a powerful computational tool used in drug discovery 
 - **Operating System:** Linux
 - **Python Version:** Python 3.9 with the installation of dependencies, installed with command line conda install python = 3.9 , conda install anaconda-navigator
 - **Required Python Packages:** ``
-- **External Dependencies:** This requires the presence of openbabel and installed with the command conda install -c conda-forge openbabel
+- **External Dependencies:** This requires the presence of RDkit and openbabel which is installed with the command conda install -c conda-forge openbabel
 ---
 ## Usage
 
@@ -76,9 +76,15 @@ An example two pharmacophore core molecule is the
 ![alt text](https://github.com/CMCDD/molhybrid/blob/master/graphics/core.png)
 
 
-### Example 1
+### Example 
+You need to input two or more pharmacophore SMILES STRINGS along with linkers, such as functional groups, into the software, which will then generate a molecular library.
+Linkers
+'CCO', # Ethanol 'CC(=O)O', # Acetic acid, 'CC(C)C', # Isobutane
 
-You have to provide 2 or more pharmacophore structures, the linkers such as functional group to the software and it will generate a library
+Pharmacophores
+CNC1=C2C=CC(Cl)=CC2=NC=C1','CC1=C(C)C2=C(NN=C2)N=C1', 'c1(ccc(cc1)S(=O)(N)=O)N',
+
+Generated molecules
 
 
 
