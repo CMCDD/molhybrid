@@ -134,9 +134,12 @@ Generated molecules
 ![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/Linkers.png)
 
 ```
+```
 ![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/Pharmacophore.png)
 
 ```
+```
 
 ![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/Ligandscleaned2.png)
+
 
