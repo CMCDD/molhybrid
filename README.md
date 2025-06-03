@@ -130,5 +130,5 @@ Generated molecules
 
 ```
 
-![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/ligands1.png)
+![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/Ligandscleaned2.png)
 
