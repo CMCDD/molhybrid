@@ -45,7 +45,8 @@ The output should print the folling on the terminal:
 
  --opt {optimize,no_optimize}  
     Enable or disable structure optimization.
-    - `optimize`: Perform UFF (Universal Force Field) optimization (default is off). This process can be extremelly expensevive as the the function will be iterating over 500 times try to optimise the miolecule.
+    - `optimize`: Perform UFF (Universal Force Field) optimization (default is off). Once a valid 3D structure is embedded, the Universal Force Field (UFF) is applied to optimize the molecular geometry. This step minimizes the molecular energy by adjusting atomic positions, performed for up to 500 iterations.
+    
     - `no_optimize`: Skip optimization.
 
  --NP, {Np}  
