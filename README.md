@@ -35,26 +35,32 @@ The output should print the folling on the terminal:
 ```
 ###### Arguments
 
- -h, --help:
-    Show this help message and exit.
+* `-h`, `--help`
+  Display this help message and exit.
 
- -duplicates {T,true,f,false}  
-    Specify whether to show duplicates in the output.
-    - `T` or `true`: Show duplicates available.
-    - `F` or `false`: Do not show duplicates.
+* `-duplicates {T, true, F, false}`
+  Specify whether to display duplicate molecules in the output.
 
- --opt {optimize,no_optimize}  
-    Enable or disable structure optimization.
-    - `optimize`: Perform UFF (Universal Force Field) optimization (default is off). Once a valid 3D structure is embedded, the Universal Force Field (UFF) is applied to optimize the molecular geometry. This step minimizes the molecular energy by adjusting atomic positions, performed for up to 500 iterations.
-    - `no_optimize`: Skip optimization.
+  * `T` or `true`: Show duplicates.
+  * `F` or `false`: Do not show duplicates.
 
- --NP, {Np}  
-    Set the number of parallel threads to use for processing.
+* `--opt {optimize, no_optimize}`
+  Enable or disable structure optimization.
 
- --output_type {single,Multiple}  
-    Define the format of the output files.
-    - `single`: Output as a single file.
-    - `Multiple`: Output as multiple files.
+  * `optimize`: Perform UFF (Universal Force Field) optimization. After embedding a valid 3D structure, UFF minimizes the molecular energy by adjusting atomic positions, with up to 500 iterations. This option is off by default.
+  * `no_optimize`: Skip the optimization step.
+
+* `--NP {Np}`
+  Set the number of parallel threads to use during processing.
+
+* `--output_type {single, Multiple}`
+  Specify the output file format.
+
+  * `single`: Output results to a single file.
+  * `Multiple`: Output results as multiple files.
+
+---
+
 
 
 In order the to run the molhbrid program, inputs parameters are required can be detailed in a configuration file with **.ini** extension. The molhbrid program uses a configuration file in .ini format to define the parameters and molecular components required for hybrid molecule generation. The configuration file consists of three main sections: **parameters**, **linkers**, and **pharmacophores**.The example of an input configuration is shown below.
