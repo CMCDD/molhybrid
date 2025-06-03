@@ -1,7 +1,9 @@
 # Molhybrid
 ---
-## About
-Molecular hybridization is a powerful computational tool used in drug discovery that generates hybrids based on a given pharmacophore core structure. The tool randomly combines the pharmacophoric fragments from known bioactive compounts within an existing chemical space and thus generate a library of molecules. 
+## Intoduvtion
+Molhybrid (Molecular hybridization) is a powerful computational strategy in drug discovery that generates novel compounds by combining pharmacophoric fragments derived from known bioactive molecules. By exploring existing chemical space and merging diverse structural features, this method creates a virtual library of hybrid molecules with potential biological activity.
+
+This implementation of molhyrbid allows users to define pharmacophores and linkers in a straightforward .ini configuration file. The program then systematically assembles these fragments to generate hybrid molecules, supporting applications in lead discovery, scaffold hopping, and virtual screening. It is particularly valuable in early-stage drug development where rapid generation of diverse chemical structures is essential.
 
 ---
 ## System Requirements 
