@@ -31,9 +31,9 @@ The output should print the folling on the terminal:
 --ouput_type {single,Multiple} (output file format)
 
 ```
-In order the to run the molhbrid program, inputs parameters are required can be detailed in a configuration file with **.ini** extension. The example of an input configuration is shown below.
+In order the to run the molhbrid program, inputs parameters are required can be detailed in a configuration file with **.ini** extension. The molhbrid program uses a configuration file in .ini format to define the parameters and molecular components required for hybrid molecule generation. The configuration file consists of three main sections: **parameters**, **linkers**, and **pharmacophores**.The example of an input configuration is shown below.
 
-```bash
+```ini
 
 ///parameters
 #max_hybrids = 20000
@@ -64,7 +64,8 @@ In order the to run the molhbrid program, inputs parameters are required can be 
 #P11 CN1CCCC[C@@H](N)C1                             :  # Another cyclic structure with nitrogen
 ```
 
-
+The parameters section includes global settings that control the behavior of the program. For this example, `max_hybrids` sets the maximum number of hybrid molecules to be generated (e.g., 20,000), and `max_asymble` limits the possible number of linker and pharmacophores that can be assembled per hybrid (e.g., 10). These parameters allow users to manage the scale and complexity of the output.
+n the molecules section, users can define molecular building blocks used in the hybridization process. Linkers, identified with #lX, are small chemical fragments such as ethoxy groups (CCO), benzene rings (C1=CC=CC=C1), or cyclohexane rings (C1CCCCC1). These fragments function as connectors between pharmacophores. Pharmacophores, identified with #PX, are more complex molecular structures that contribute specific functional or biological properties to the final hybrids. Examples include heterocyclic structures, sulfonamides, functionalized amides, and chiral amine rings, all represented in SMILES format.
 
 
 ## Installation
