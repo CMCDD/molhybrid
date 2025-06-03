@@ -111,9 +111,10 @@ molhybrid -h
 ```
 ## Examples
 
-An example two pharmacophore core molecule is the 
+An example two pharmacophore core molecule is the
 
-https://github.com/CMCDD/molhybrid/blob/main/graphics/ligands1.png
+
+![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/ligands1.png)
 
 )
 
