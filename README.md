@@ -1,6 +1,6 @@
 # Molhybrid
 ---
-## Intoduvtion
+## Intoduction
 Molhybrid (Molecular hybridization) is a powerful computational strategy in drug discovery that generates novel compounds by combining pharmacophoric fragments derived from known bioactive molecules. By exploring existing chemical space and merging diverse structural features, this method creates a virtual library of hybrid molecules with potential biological activity.
 
 This implementation of molhyrbid allows users to define pharmacophores and linkers in a straightforward .ini configuration file. The program then systematically assembles these fragments to generate hybrid molecules, supporting applications in lead discovery, scaffold hopping, and virtual screening. It is particularly valuable in early-stage drug development where rapid generation of diverse chemical structures is essential.
@@ -157,12 +157,17 @@ An example two pharmacophore core molecule is the
 
 
 ### Example 
-You need to input two or more pharmacophore SMILES STRINGS along with linkers, such as functional groups, into the software, which will then generate a molecular library.
-Linkers
-'CCO', # Ethanol 'CC(=O)O', # Acetic acid, 'CC(C)C', # Isobutane
+To generate a molecular library using the software, you need to input two or more pharmacophore SMILES strings along with linkers, such as functional groups. The software will then combine these components to create hybrid molecules.
 
-Pharmacophores
-CNC1=C2C=CC(Cl)=CC2=NC=C1','CC1=C(C)C2=C(NN=C2)N=C1', 'c1(ccc(cc1)S(=O)(N)=O)N',
+**Linkers**
+'CCO', # Ethanol
+'CC(=O)O', # Acetic acid,
+'CC(C)C', # Isobutane
+
+Malaria Pharmacophores
+CNC1=C2C=CC(Cl)=CC2=NC=C1', #quinazoline derivatives
+'CC1=C(C)C2=C(NN=C2)N=C1', #Pyrazolopyridine
+'c1(ccc(cc1)S(=O)(N)=O)N', #Sulfanilamide
 
 Generated molecules
 
