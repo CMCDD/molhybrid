@@ -8,7 +8,7 @@ Molecular hybridization is a powerful computational tool used in drug discovery 
 
 - **Operating System:** Linux
 - **Python Version:** Python 3.9 with the installation of dependencies, installed with command line conda install python = 3.9 , conda install anaconda-navigator
-- **Required Python Packages:** ``
+- **Required Python Packages:**  rdkit==2024.03.5
 - **External Dependencies:** This requires the presence of RDkit and openbabel which is installed with the command conda install -c conda-forge openbabel
 ---
 ## Usage
