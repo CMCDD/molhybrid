@@ -147,6 +147,7 @@ molhybrid -h
 ```
 
 ```
+---
 ## Examples
 
 An example two pharmacophore core molecule is the
