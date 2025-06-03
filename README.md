@@ -35,29 +35,33 @@ The output should print the folling on the terminal:
 ```
 ###### Arguments
 
+Sure! Here's a clearer and rephrased version reflecting your notes about duplicates and output files:
+
+
 * `-h`, `--help`
-  Display this help message and exit.
+  Show this help message and exit.
 
-* `-duplicates {T, true, F, false}`
-  Specify whether to display duplicate molecules in the output.
+* `--duplicates {T, true, F, false}`
+  Specify whether to remove duplicate molecules from the output files.
 
-  * `T` or `true`: Show duplicates.
-  * `F` or `false`: Do not show duplicates.
+  * `T` or `true`: Keep duplicates in the output.
+  * `F` or `false`: Remove duplicate molecules from the output.
 
 * `--opt {optimize, no_optimize}`
-  Enable or disable structure optimization.
+  Enable or disable molecular structure optimization.
 
-  * `optimize`: Perform UFF (Universal Force Field) optimization. After embedding a valid 3D structure, UFF minimizes the molecular energy by adjusting atomic positions, with up to 500 iterations. This option is off by default.
-  * `no_optimize`: Skip the optimization step.
+  * `optimize`: Perform Universal Force Field (UFF) optimization to refine 3D molecular geometries after embedding, minimizing molecular energy with up to 500 iterations. (Default is off)
+  * `no_optimize`: Skip optimization.
 
 * `--NP {Np}`
-  Set the number of parallel threads to use during processing.
+  Set the number of parallel threads to use during optimization or processing.
 
 * `--output_type {single, Multiple}`
-  Specify the output file format.
+  Specify the output file format for the generated molecules.
 
-  * `single`: Output results to a single file.
-  * `Multiple`: Output results as multiple files.
+  * `single`: Save all molecules in a single combined SDF file.
+  * `Multiple`: Save each molecule as an individual SDF file.
+
 
 ---
 
