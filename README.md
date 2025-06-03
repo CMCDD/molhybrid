@@ -166,21 +166,21 @@ molhybrid molecules.ini --duplicates false --opt no_optimize --NP 4 --output_typ
 
 
 ```bash
-molhybrid input.sdf --duplicates true --opt optimize --NP 8 --output_type multiple
+molhybrid molecules.ini --duplicates true --opt optimize --NP 8 --output_type multiple
 ```
-* Generate hybrids from 'input.sdf', keep duplicates, optimize structures,
+* Generate hybrids from 'molecules.ini', keep duplicates, optimize structures,
 * use 8 threads, and output each molecule as an individual SDF file
 
 
 ```bash
-molhybrid my_molecules.sdf --opt optimize
+molhybrid molecules.ini --opt optimize
 ```
 * Generate hybrids, no duplicate removal, optimization on, default 4 threads,
 * output to a single combined file
 
 
 ```bash
-molhybrid sample.sdf --duplicates false --opt no_optimize --NP 2 --output_type multiple
+molhybrid molecules.ini --duplicates false --opt no_optimize --NP 2 --output_type multiple
 ```
 * Generate hybrids, remove duplicates, no optimization, 2 threads,
 * output each molecule separately
