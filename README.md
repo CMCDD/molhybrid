@@ -131,6 +131,7 @@ CNC1=C2C=CC(Cl)=CC2=NC=C1','CC1=C(C)C2=C(NN=C2)N=C1', 'c1(ccc(cc1)S(=O)(N)=O)N',
 Generated molecules
 
 ```
+![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/Pharmacophore.png)
 
 ![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/Ligandscleaned2.png)
 
