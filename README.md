@@ -13,6 +13,49 @@ This implementation of molhyrbid allows users to define pharmacophores and linke
 - **Required Python Packages:**  rdkit==2024.03.5
 - **External Dependencies:** This requires the presence of RDkit and openbabel which is installed with the command conda install -c conda-forge openbabel
 ---
+## Installation and setup
+
+### Internal Dependencies
+
+From your home directory, open a terminal and execute the command below to install the required internal components:
+
+Step 1: Set up a Conda environment named molhybrid
+```bash
+conda create --name molhybrid python=3.9
+```
+Step 2: Launch/activate environment
+```bash
+conda activate molhybrid
+```
+Step 3: Go to the site-packages folder of you molhbrid anaconda enviroment
+Navigate to the directory where Python libraries are installed (typically under lib/python3.9/site-packages) within your Conda environment
+```bash
+cd anaconda3/envs/molhybrid/lib/python3.9/site-packages/
+```
+Step 4: Download the Repository from GitHub
+Use git to clone the T_SELEX software repository to your local computer
+```bash
+git clone https://github.com/CMCDD/molhybrid.git
+```
+Step 5: Install Required Packages via Script
+Run the requirement.txt for installing the dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+Step 6: Make the Main Script Executable
+Grant execution permissions to the molhybrid_program.py script
+```bash
+sudo cp molhybrid_program.py /usr/local/bin/molhybrid
+```
+Step 7: Verify Installation
+Run the command to confirm everything is working properly
+```bash
+molhybrid -h
+```
+---
+
+
 ## Usage
 
 In order to access the user manual, run the following command
@@ -64,9 +107,6 @@ Sure! Here's a clearer and rephrased version reflecting your notes about duplica
 
 
 ---
-
-
-
 In order the to run the molhbrid program, inputs parameters are required can be detailed in a configuration file with **.ini** extension. The molhbrid program uses a configuration file in .ini format to define the parameters and molecular components required for hybrid molecule generation. The configuration file consists of three main sections: **parameters**, **linkers**, and **pharmacophores**.The example of an input configuration is shown below.
 
 ```ini
@@ -105,80 +145,50 @@ In the molecules section, users can define molecular building blocks used in the
 
 Each entry starts with a comment character **(#)**, followed by a unique identifier (e.g., **#l1**, **#P3**), the SMILES string representing the molecule, and a description comment that explains the structure in simple terms. Descriptions following colons **(:)** are for user reference only and are ignored during execution.
 
-## Installation
-
-### Internal Dependencies
-
-From your home directory, open a terminal and execute the command below to install the required internal components:
-
-Step 1: Set up a Conda environment named molhybrid
-```bash
-conda create --name molhybrid python=3.9
-```
-Step 2: Launch/activate environment
-```bash
-conda activate molhybrid
-```
-Step 3: Go to the site-packages folder of you molhbrid anaconda enviroment
-Navigate to the directory where Python libraries are installed (typically under lib/python3.9/site-packages) within your Conda environment
-```bash
-cd anaconda3/envs/molhybrid/lib/python3.9/site-packages/
-```
-Step 4: Download the Repository from GitHub
-Use git to clone the T_SELEX software repository to your local computer
-```bash
-git clone https://github.com/CMCDD/molhybrid.git
-```
-Step 5: Install Required Packages via Script
-Run the requirement.txt for installing the dependencies.
-
-```bash
-pip install -r requirements.txt
-```
-Step 6: Make the Main Script Executable
-Grant execution permissions to the molhybrid_program.py script
-```bash
-sudo cp molhybrid_program.py /usr/local/bin/molhybrid
-```
-Step 7: Verify Installation
-Run the command to confirm everything is working properly
-```bash
-molhybrid -h
-```
-
-```
----
-## Examples
-
-An example two pharmacophore core molecule is the
 
 
 
-)
-
-
-### Example 
-To generate a molecular library using the software, you need to input two or more pharmacophore SMILES strings along with linkers, such as functional groups. The software will then combine these components to create hybrid molecules.
-
-**Linkers**
-'CCO', # Ethanol
-'CC(=O)O', # Acetic acid,
-'CC(C)C', # Isobutane
-
-Malaria Pharmacophores
-CNC1=C2C=CC(Cl)=CC2=NC=C1', #quinazoline derivatives
-'CC1=C(C)C2=C(NN=C2)N=C1', #Pyrazolopyridine
-'c1(ccc(cc1)S(=O)(N)=O)N', #Sulfanilamide
-
-Generated molecules
-
-```
 ![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/LinkPharmacophores.png)
 
-```
 
+*figure 1: Two stuctures of the imput linkes and pharmacophores*
+
+
+
+
+### Example of the commands are the following
+
+```bash
+molhybrid molecules.ini --duplicates false --opt no_optimize --NP 4 --output_type single
 ```
+* Generate hybrids from input file 'molecules.ini', remove duplicates, no optimization,
+* use 4 parallel threads, output all molecules in a single SDF file
+
+
+```bash
+molhybrid input.sdf --duplicates true --opt optimize --NP 8 --output_type multiple
+```
+* Generate hybrids from 'input.sdf', keep duplicates, optimize structures,
+* use 8 threads, and output each molecule as an individual SDF file
+
+
+```bash
+molhybrid my_molecules.sdf --opt optimize
+```
+* Generate hybrids, no duplicate removal, optimization on, default 4 threads,
+* output to a single combined file
+
+
+```bash
+molhybrid sample.sdf --duplicates false --opt no_optimize --NP 2 --output_type multiple
+```
+* Generate hybrids, remove duplicates, no optimization, 2 threads,
+* output each molecule separately
+---
+
+Based on the input configuration described above, an example of the generated molecular hybrids is shown in Figure 2. Some of these molecules may appear very complex in terms of their chemical composition and structure. This complexity arises because the max_asymble parameter was set to 10, allowing the program to assemble up to 10 fragments per molecule, resulting in more intricate hybrid molecules.
+
 
 ![alt text](https://github.com/CMCDD/molhybrid/blob/main/graphics/LIBRARYMOL.png)
-
+*figure 2:Representative examples of molecular hybrids generated by Molhybrid using the specified input parameters.*
 
