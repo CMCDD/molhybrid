@@ -13,10 +13,13 @@ Molecular hybridization is a powerful computational tool used in drug discovery 
 ---
 ## Usage
 
-In order to access the user manual, runn the following command
+In order to access the user manual, run the following command
 ```bash
    molhybrid -h
+```
+The output should print the folling on the terminal:
 
+```bash
 ###### Arguments
 
  -h, --help:
@@ -38,11 +41,11 @@ Step 1: Set up a Conda environment named molhybrid
 ```bash
 conda create --name molhybrid python=3.9
 ```
-Step 2: Launch environment
+Step 2: Launch/activate environment
 ```bash
 conda activate molhybrid
 ```
-Step 3: Go to the site-packages folder
+Step 3: Go to the site-packages folder of you molhbrid anaconda enviroment
 Navigate to the directory where Python libraries are installed (typically under lib/python3.9/site-packages) within your Conda environment
 ```bash
 cd anaconda3/envs/molhybrid/lib/python3.9/site-packages/
@@ -53,19 +56,20 @@ Use git to clone the T_SELEX software repository to your local computer
 git clone https://github.com/CMCDD/molhybrid.git
 ```
 Step 5: Install Required Packages via Script
-Run the provided Python script to automatically install all dependencies
+Run the requirement.txt for installing the dependencies.
+
 ```bash
-python install_dependencies.py
+pip install -r requirements.txt
 ```
 Step 6: Make the Main Script Executable
 Grant execution permissions to the molhybrid_program.py script
 ```bash
-sudo cp molhybrid_program.py /usr/local/bin/molhybrid_program
+sudo cp molhybrid_program.py /usr/local/bin/molhybrid
 ```
 Step 7: Verify Installation
 Run the command to confirm everything is working properly
 ```bash
-molhybrid_program
+molhybrid -h
 ```
 
 ```
