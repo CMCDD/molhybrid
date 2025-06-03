@@ -67,6 +67,7 @@ In order the to run the molhbrid program, inputs parameters are required can be 
 The parameters section includes global settings that control the behavior of the program. For this example, `max_hybrids` sets the maximum number of hybrid molecules to be generated (e.g., 20,000), and `max_asymble` limits the possible number of linker and pharmacophores that can be assembled per hybrid (e.g., 10). These parameters allow users to manage the scale and complexity of the output.
 n the molecules section, users can define molecular building blocks used in the hybridization process. **Linkers** are identified with *#lX* are small chemical fragments such as ethoxy groups (CCO), benzene rings (C1=CC=CC=C1), or cyclohexane rings (C1CCCCC1). These fragments function as connectors between pharmacophores. **Pharmacophores** are identified with *#PX*, are more complex molecular structures that contribute specific functional or biological properties to the final hybrids. Examples include heterocyclic structures, sulfonamides, functionalized amides, and chiral amine rings, all represented in SMILES format.
 
+Each entry starts with a comment character **(#)**, followed by a unique identifier (e.g., **#l1**, **#P3**), the SMILES string representing the molecule, and a description comment that explains the structure in simple terms. Descriptions following colons **(:)** are for user reference only and are ignored during execution.
 
 ## Installation
 
