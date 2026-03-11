@@ -27,13 +27,13 @@ Step 2: Launch/activate environment
 ```bash
 conda activate molhybrid
 ```
-Step 3: Go to the site-packages folder of you molhbrid anaconda enviroment
+Step 3: Go to the site-packages folder of your molhbrid anaconda enviroment
 Navigate to the directory where Python libraries are installed (typically under lib/python3.9/site-packages) within your Conda environment
 ```bash
 cd anaconda3/envs/molhybrid/lib/python3.9/site-packages/
 ```
 Step 4: Download the Repository from GitHub
-Use git to clone the T_SELEX software repository to your local computer
+Use git to clone the molhybrid software repository to your local computer
 ```bash
 git clone https://github.com/CMCDD/molhybrid.git
 ```
