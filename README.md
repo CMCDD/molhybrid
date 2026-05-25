@@ -156,7 +156,7 @@ Each entry starts with a comment character **(#)**, followed by a unique identif
 
 
 
-### Example of the commands are the following
+### Examples of commands used for generating structures are shown below:
 
 ```bash
 molhybrid molecules.ini --duplicates false --opt no_optimize --NP 4 --output_type single
