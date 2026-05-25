@@ -27,7 +27,7 @@ Step 2: Launch/activate environment
 ```bash
 conda activate molhybrid
 ```
-Step 3: Go to the site-packages folder of your molhbrid anaconda enviroment
+Step 3: Go to the site-packages folder of your molhybrid anaconda enviroment
 Navigate to the directory where Python libraries are installed (typically under lib/python3.9/site-packages) within your Conda environment
 ```bash
 cd anaconda3/envs/molhybrid/lib/python3.9/site-packages/
