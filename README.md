@@ -1,4 +1,4 @@
-# Molhybrid
+# MOLHYBRID
 ---
 ## Intoduction
 Molhybrid (Molecular hybridization) is a powerful computational strategy in drug discovery that generates novel compounds by combining pharmacophoric fragments derived from known bioactive molecules. By exploring existing chemical space and merging diverse structural features, this method creates a virtual library of hybrid molecules with potential biological activity.
