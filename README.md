@@ -37,7 +37,7 @@ Use git to clone the molhybrid software repository to your local computer
 ```bash
 git clone https://github.com/CMCDD/molhybrid.git
 ```
-Step 5: Install Required Packages via Script
+Step 5: Install required Packages via Script
 Run the requirement.txt for installing the dependencies.
 
 ```bash
@@ -62,7 +62,7 @@ In order to access the user manual, run the following command
 ```bash
    molhybrid -h
 ```
-The output should print the folling on the terminal:
+The output should print the following on the terminal:
 
 ```bash
 ###### Arguments
